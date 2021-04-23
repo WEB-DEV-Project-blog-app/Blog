@@ -1,0 +1,10 @@
+<div class="auth-form">
+  <p><input placeholder="username" [(ngModel)]="username" /></p>
+  <p><input type="password" placeholder="Password" [(ngModel)]="password" /></p>
+  <button (click)="login()">Log in</button>
+
+  <div *ngIf="tried">
+    <p class="error-auth">Incorrect username or password. Please, try again.</p>
+  </div>
+
+</div>
